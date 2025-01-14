@@ -1,0 +1,237 @@
+footer {
+    position: relative;
+    width: 100%;
+    height: 610px;
+    background: #FFF300;
+    font-family: "Inter", serif;
+    display: flex;
+}
+
+.container-footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    color: aliceblue;
+    padding-top: 60px;
+}
+
+/************CATEGORIAS************/
+
+.container_categoria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container_categoria ul{
+    list-style: none;
+}
+
+.container_categoria ul li{
+    margin: 10px 0;
+    display: flex;
+}
+
+.container_categoria ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+/************CONTACTANOS************/
+
+/************REDES SOCIALES************/
+.container_redes_footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.redes_sociales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes_sociales img{
+    cursor: pointer;
+}
+
+.circulo_de_redes_sociales{
+    width: 50px;
+    height: 50px;
+    border: 3px solid #F26144;
+    background-color: #ecd71a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 8px;
+}
+
+.instagram{
+    width: 50px;
+}
+
+.facebook{
+    width: 30px;
+}
+
+.youtube{
+    width: 35px;
+}
+
+.tik_tok{
+    width: 31px;
+}
+
+.twitter{
+    width: 25px;
+}
+
+.spotify{
+    width: 35px;
+}
+
+/************BORDES************/
+
+/************BORDES VERTICALES************/
+.borde-vertical {
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1C2657;
+    width: 55px;
+    height: 100%;
+    overflow: hidden; /* Oculta las palabras fuera del contenedor */
+}
+
+.borde-vertical.b {
+    right: 0;
+}
+
+/* Contenedor de las palabras que se animarán infinitamente */
+.borde-vertical .container-palabras {
+    z-index: 34;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Comienza desde la parte superior */
+    align-items: center;
+    animation: scroll-vertical-tira-a 10s linear infinite; /* Ajusta la duración según el contenido */
+    -webkit-animation: scroll-vertical-tira-a 10s linear infinite;
+    width: 100%;
+}
+
+.borde-vertical.b .container-palabras {
+    animation: scroll-vertical-tira-b 10s linear infinite; 
+    -webkit-animation: scroll-vertical-tira-b 10s linear infinite;
+}
+
+footer .container-palabras span {
+    writing-mode: vertical-rl; /* Orienta el texto verticalmente de derecha a izquierda */
+    color: #F26144;
+    font-size: 25px;
+    font-weight: 800;
+    margin: 5px 0; /* Espaciado entre palabras */
+    width: var(--width);
+    pointer-events: none;
+}
+
+/*Se da vuelta la tira de la derecha (Por si lo necesitamos)*/
+
+/*
+.borde-vertical.b .container-palabras {
+    transform: rotate(180deg); /* Voltea el contenedor verticalmente
+}
+
+.borde-vertical.b .container-palabras span {
+    transform: rotate(180deg); /* Voltea las palabras nuevamente para que se lean correctamente 
+}
+
+*/
+
+
+/* Animación para desplazar de arriba hacia abajo */
+@keyframes scroll-vertical-tira-a  {
+    0% {
+        transform: translateY(-30%); /* Comienza desde la parte superior del contenido duplicado */
+    }
+    100% {
+        transform: translateY(0%); /* Termina justo cuando el contenido duplicado ocupa el espacio */
+    }
+}
+
+@keyframes scroll-vertical-tira-b  {
+    0% {
+        transform: translateY(0%); /* Comienza desde la parte superior del contenido duplicado */
+    }
+    100% {
+        transform: translateY(-30%); /* Termina justo cuando el contenido duplicado ocupa el espacio */
+    }
+}
+
+/************BORDES HORIZONTALES************/
+
+.borde-horizontal {
+    z-index: 1;
+    position: absolute;
+    background: #1C2657;
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Oculta las palabras fuera del contenedor */
+}
+
+.container-paralelogramo{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    animation: scroll-horizontal 3s linear infinite; 
+    -webkit-animation: scroll-horizontal 3s linear infinite;
+}
+
+.paralelogramo{
+    width: 45px;
+    transform: skew(40deg);
+    background: #F26144;
+    margin: 0 25px;
+}
+
+
+.borde-horizontal.b{
+    bottom: 0;
+}
+
+.borde-horizontal.b .container-paralelogramo{
+    animation: scroll-horizontal-b 3s linear infinite; 
+    -webkit-animation: scroll-horizontal-b 3s linear infinite;
+}
+
+.borde-horizontal.b .container-paralelogramo .paralelogramo{
+    transform: skew(-40deg);
+}
+
+
+@keyframes scroll-horizontal {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-15%); /* Mueve todo el contenedor hacia la izquierda */
+    }
+}
+
+@keyframes scroll-horizontal-b {
+    0% {
+        transform: translateX(-15%);
+    }
+    100% {
+        transform: translateX(0%); /* Mueve todo el contenedor hacia la izquierda */
+    }
+}
