@@ -6,58 +6,60 @@ import logoX from '../imagenes/logo-X.png'
 import logoSpotify from "../imagenes/logo spotify.png"
 import { Routes,Route, Link } from 'react-router-dom'
 
+import ondaAmarillo from '../imagenes/onda-footer.png';
+
 const Footer = () => {
     return (
         <div>
-            <footer>
+            <footer className='footer'>
                 <div className="borde-vertical a">
                     <div className="container-palabras">
-                        <span>Un Poco de Ruido</span>
+                        <span>STREAMING CUMBIA</span>
                         <span>-</span>
-                        <span>Un Poco de Ruido</span>
+                        <span>STREAMING CUMBIA</span>
                         <span>-</span>
-                        <span>Un Poco de Ruido</span>
+                        <span>STREAMING CUMBIA</span>
                         <span>-</span>
-                        <span>Un Poco de Ruido</span>
+                        <span>STREAMING CUMBIA</span>
                         <span>-</span>
-                        <span>Un Poco de Ruido</span>
+                        <span>STREAMING CUMBIA</span>
                         <span>-</span>
-                        <span>Un Poco de Ruido</span>
+                        <span>STREAMING CUMBIA</span>
                         <span>-</span>
-                        <span>Un Poco de Ruido</span>
+                        <span>STREAMING CUMBIA</span>
                         <span>-</span>
                         {/* Duplicar palabras para un efecto continuo */}
-                        <span>Un Poco de Ruido</span>
+                        <span>STREAMING CUMBIA</span>
                         <span>-</span>
-                        <span>Un Poco de Ruido</span>
+                        <span>STREAMING CUMBIA</span>
                         <span>-</span>
-                        <span>Un Poco de Ruido</span>
+                        <span>STREAMING CUMBIA</span>
                         <span>-</span>
                     </div>
                 </div>
                 <div className="borde-vertical b">
                     <div className="container-palabras">
-                            <span>Un Poco de Ruido</span>
-                            <span>-</span>
-                            <span>Un Poco de Ruido</span>
-                            <span>-</span>
-                            <span>Un Poco de Ruido</span>
-                            <span>-</span>
-                            <span>Un Poco de Ruido</span>
-                            <span>-</span>
-                            <span>Un Poco de Ruido</span>
-                            <span>-</span>
-                            <span>Un Poco de Ruido</span>
-                            <span>-</span>
-                            <span>Un Poco de Ruido</span>
-                            <span>-</span>
-                            {/* Duplicar palabras para un efecto continuo */}
-                            <span>Un Poco de Ruido</span>
-                            <span>-</span>
-                            <span>Un Poco de Ruido</span>
-                            <span>-</span>
-                            <span>Un Poco de Ruido</span>
-                            <span>-</span>
+                    <span>STREAMING CUMBIA</span>
+                        <span>-</span>
+                        <span>STREAMING CUMBIA</span>
+                        <span>-</span>
+                        <span>STREAMING CUMBIA</span>
+                        <span>-</span>
+                        <span>STREAMING CUMBIA</span>
+                        <span>-</span>
+                        <span>STREAMING CUMBIA</span>
+                        <span>-</span>
+                        <span>STREAMING CUMBIA</span>
+                        <span>-</span>
+                        <span>STREAMING CUMBIA</span>
+                        <span>-</span>
+                        {/* Duplicar palabras para un efecto continuo */}
+                        <span>STREAMING CUMBIA</span>
+                        <span>-</span>
+                        <span>STREAMING CUMBIA</span>
+                        <span>-</span>
+                        <span>STREAMING CUMBIA</span>
+                        <span>-</span>
                     </div>
                 </div>
                 <div className="borde-horizontal a">
@@ -87,7 +89,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="borde-horizontal b">
-                <div className="container-paralelogramo">
+                    <div className="container-paralelogramo">
                         {/* Paralelogramos visibles */}
                         <div className="paralelogramo"></div>
                         <div className="paralelogramo"></div>
@@ -113,8 +115,30 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="container-footer">
+                    <div className="container_onda">
+                        <img src={ondaAmarillo} className='onda_amarrilla'/>
+                        <img src={ondaAmarillo} className='onda_amarrilla'/>
+                    </div>
+
+                    <div className="container_onda">
+                        <img src={ondaAmarillo} className='onda_amarrilla'/>
+                        <img src={ondaAmarillo} className='onda_amarrilla'/>
+                    </div>
+
+                    <div className="container_onda">
+                        <img src={ondaAmarillo} className='onda_amarrilla'/>
+                        <img src={ondaAmarillo} className='onda_amarrilla'/>
+                    </div>
+                    <div className="container_onda">
+                        <img src={ondaAmarillo} className='onda_amarrilla'/>
+                        <img src={ondaAmarillo} className='onda_amarrilla'/>
+                    </div>
+                    <div className="container_onda">
+                        <img src={ondaAmarillo} className='onda_amarrilla'/>
+                        <img src={ondaAmarillo} className='onda_amarrilla'/>
+                    </div>
                     <div className="container_categoria">
-                        <h2>Categoria</h2>
+                        <h2>CATEGORIA</h2>
                         <ul>
                             <li><Link to="/">Inicio</Link></li>
                             <li><Link to="/about">Sobre Nosotros</Link></li>
@@ -124,30 +148,37 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className="container_contactanos">
-                        <h2>Contactános</h2>
+                        <h2>CONTACTÁNOS</h2>
+                        <ul>
+                            <li><Link >5491133154387</Link></li>
+                            <li><Link >91133154387</Link></li>
+                            <li><Link >unpocoderuido89@gmail.com</Link></li>
+                            <li><Link >Miguel Angel 3635</Link></li>
+                        </ul>
                     </div>
                     <div className="container_redes_footer">
-                        <h2>Seguinos en nuestras redes</h2>
+                        <h2>SEGUINOS EN NUESTRAS REDES</h2>
                         <div className="redes_sociales">
-                            <div className="circulo_de_redes_sociales">
+                            <div className="cuadrado_de_redes_sociales">
                                 <img src={logoInsta} className='instagram'/>
                             </div>
-                            <div className="circulo_de_redes_sociales">
+                            <div className="cuadrado_de_redes_sociales">
                                 <img src={logoFace} className='facebook'/>
                             </div>
-                            <div className="circulo_de_redes_sociales">
+                            <div className="cuadrado_de_redes_sociales">
                                 <img src={logoYoutube} className='youtube'/>
                             </div>
-                            <div className="circulo_de_redes_sociales">
+                            <div className="cuadrado_de_redes_sociales">
                                 <img src={logoTikTok} className='tik_tok'/>
                             </div>
-                            <div className="circulo_de_redes_sociales">
+                            <div className="cuadrado_de_redes_sociales">
                                 <img src={logoX} className='twitter'/>
                             </div>
-                            <div className="circulo_de_redes_sociales">
+                            <div className="cuadrado_de_redes_sociales">
                                 <img src={logoSpotify} className='spotify'/>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </footer>

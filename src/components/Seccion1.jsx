@@ -1,5 +1,6 @@
 import React from "react";
 import globo_titulo from "../imagenes/globo-naranja.png";
+import fondo_azul from '../imagenes/Fondo-titulo-azul.png'
 import ojotas from "../imagenes/productos/ojotas.png";
 import sudadera from "../imagenes/productos/sudadera.png";
 import remera_blanca from "../imagenes/productos/remera-blanca.png";
@@ -37,7 +38,7 @@ const Seccion1 = () => {
   return (
     <section className="seccion1">
       <div className="container_titulo">
-        <img src={globo_titulo} alt="Globo Título" />
+        <img src={fondo_azul}/>
         <h1>Productos Piola</h1>
       </div>
       <Slider {...settings} className="slider">

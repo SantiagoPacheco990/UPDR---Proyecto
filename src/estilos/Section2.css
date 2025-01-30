@@ -1,0 +1,116 @@
+.section2 {
+    width: 98%;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-family: "Inter", serif;
+    background: #453f9e;
+    overflow: hidden; /* Oculta los elementos fuera del contenedor */
+  }
+  
+  .section2::-webkit-scrollbar {
+    display: none; /* Oculta la barra de desplazamiento */
+  }
+  
+  .slider-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: max-content;
+    position: relative;
+  }
+  
+  
+  .flecha_scroll {
+    width: 50px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 10; /* Para que las flechas estén sobre los productos */
+    
+  }
+  
+  .flecha_scroll.a {
+    left: 10px; /* Posición de la flecha izquierda */
+    transform: rotate(180deg);
+  }
+  
+  .flecha_scroll:not(.a) {
+    right: 10px; /* Posición de la flecha derecha */
+  }
+  
+  .producto_sec2 {
+    min-width: 24%;
+    height: 65%;
+    margin: 0 20px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 0 2px 4px #ccc;
+    transition: transform 0.3s ease;
+  }
+  
+  .producto_sec2 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom: 5px solid #f1c40f;
+    transition: transform 0.3s ease; /* Efecto al pasar el mouse */
+  }
+  
+  .producto_sec2 img:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el mouse */
+  }
+  
+  .detalles_producto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .titulo_producto_sec2 {
+    font-weight: 400;
+    color: rgb(156, 156, 156);
+    margin: 10px 0; /* Espaciado entre el título y el precio */
+  }
+  
+  .precio_sec2 {
+    color: #f1c40f;
+    font-weight: bold;
+    margin-bottom: 15px; /* Espaciado con los botones */
+  }
+  
+  .producto_sec2 button {
+    border: 0;
+    outline: none;
+    width: 100px;
+    height: 35px;
+    padding: 6px;
+    border-radius: 20px;
+    margin: 0 5px; /* Espaciado entre botones */
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s ease; /* Transición en el color de fondo */
+  }
+  
+  .btn-comprar_sec2 {
+    background: #453f9e;
+    color: #fff;
+  }
+  
+  .btn-comprar_sec2:hover {
+    background: #2c2a8a; /* Color más oscuro al pasar el mouse */
+  }
+  
+  .btn-ver_sec2 {
+    color: #fff;
+    background: #f26144;
+  }
+  
+  .btn-ver_sec2:hover {
+    background: #d94c34; /* Color más oscuro al pasar el mouse */
+  }
+  
