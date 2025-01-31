@@ -1,17 +1,12 @@
 .seccion1 {
     font-family: "Inter", serif;
-
-    background: #f3f3f3;
     width: 100%;
     height: 700px;
-    margin: 0;
-    padding: 0;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column; 
-    /*top: 269px;*/
 }
 
 .container_titulo {
@@ -38,21 +33,58 @@
     z-index: -1;
 }
 
+/*********************SLIDER*********************/
 
 .slider {
     width: 90%;
-    margin: 0 auto;
 }
 
+.slick-slide div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 8px;
+    margin-right: 20px;
+}
+
+/* FLECHAS DEL SLIDER */
+.slick-prev,
+.slick-next {
+    position: absolute;
+    z-index: 10;
+    transition: color 0.3s ease-in-out; /* Animación de cambio de color */
+}
+
+.slick-prev {
+  left: -55px !important; /* Ajusta la posición izquierda */
+}
+
+.slick-next {
+  right: -20px !important; /* Ajusta la posición derecha */
+}
+
+/* Estilos normales de las flechas */
+.slick-prev::before,
+.slick-next::before {
+    color: rgb(0, 0, 0) !important; /* Color normal */
+    font-size: 60px !important; /* Ajusta el tamaño */
+    transition: color 0.3s ease-in-out; /* Animación suave */
+}
+
+/* Cuando pasas el mouse sobre la flecha */
+.slick-prev:hover::before,
+.slick-next:hover::before {
+  color: #9e9e9e !important; /* Cambia a amarillo al hacer hover */
+}
+
+/*********************TARJETA PRODUCTO*********************/
 
 .producto{
     position: relative;
     background: #fff;
-    width: 300px;
-    height: 370px;
-    /*border-bottom: 4px solid #453F9E;*/
+    height: 350px;
     border-radius: 20px;
-    box-shadow: 0 0 2px 4px #ccc;
+    box-shadow: 0 0 2px 4px #a09b9b;
 }
 
 
@@ -68,42 +100,51 @@
 
 
 .titulo_producto{
+    font-size: 18px;
     font-weight: 400;
     color: rgb(156, 156, 156);
 }
 
 .precio{
+    font-size: 17px;
     color: #F1C40F;
 }
 
 .producto button{
     border: 0;
     outline: none;
-    width: 120px;
+    width: 100px;
     height: 35px;
-    padding: 6px;
     border-radius: 20px;
     margin: 0 5px;
     font-weight: 700;
+    color: #fff;
     cursor: pointer;
+    transition: .5s ease;
 }
 
 .btn-comprar{
     background: #453F9E;
-    color: #fff;
 }
 
+.btn-comprar:hover{
+    color: #e4d9d9;
+    background: #6057d6;
+}
+
+
 .btn-ver{
-    color: #fff;
     background: #F26144;
 }
 
-.slick-slide div{
-    margin: 0 1rem;
+.btn-ver:hover{
+    color: #e4d9d9;
+    background: #fd7054;
 }
+
 
 @media (max-width: 960px){
     .seccion1{
-        padding-top: 250px;
+        padding-top: 200px;
     }
 }

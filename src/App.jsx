@@ -30,18 +30,22 @@ function App() {
             element={
               <>
                 
+                {/*
                 <Header1 />
                 <div className="sticky-container">
                   <Header2 />
                   <Navegador />
                 </div>
-                
-                 
+                */}
+                 <Seccion1/>
                 
                 <div className="prueba">
                   <img src={texturaAzul} className="azul" />
                   <img src={texturaAmarrillo} className="amarrillo" />
                   <img src={texturaNaranja} className="naranja segunda-naranja" />
+                  <div className="container_novedades">
+                    <h1>Novedades</h1>
+                  </div>
                   <img src={texturaAmarrillo} className="amarrillo" />
                   <img src={texturaAzul} className="azul segunda-azul" />
                   <img src={texturaNaranja} className="naranja" />

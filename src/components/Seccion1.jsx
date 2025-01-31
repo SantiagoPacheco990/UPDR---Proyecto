@@ -12,21 +12,29 @@ import Slider from "react-slick";
 
 const Seccion1 = () => {
   const settings = {
-    dots: true,
+    dots: false,  //Son los puntitos que estan abajo
     infinite: true,
     speed: 500,
-    slidesToShow: 3, // Muestra 3 productos por vista
+    slidesToShow: 4, // Muestra 3 productos por vista
     slidesToScroll: 1, // Avanza 1 producto por clic
+    
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1111,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 850,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 650,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
